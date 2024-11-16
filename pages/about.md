@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
-possibly a corgi, most definitely not!  Either way there are really neat things I am up to!
+an undergraduate student studying Information Sciences with a minor in Recreation, Sport, and Tourism. I love and am interested in all things technology, aspiring to be a Data Analyst or Project Manager!
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
