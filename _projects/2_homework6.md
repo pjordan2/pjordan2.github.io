@@ -31,6 +31,6 @@ The interactivity I chose for these plots are the brush and linking. You can sel
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/pjordan2/pjordan2.github.io/blob/main/python_notebooks/homework6.ipynb" text="The Analysis" %}
 </div>
 
