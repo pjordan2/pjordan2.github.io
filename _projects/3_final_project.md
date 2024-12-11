@@ -53,9 +53,9 @@ This earnings distribution shows an interesting parallel to Olympic medal counts
 
 <div class="left">
 {% include elements/button.html link="https://raw.githubusercontent.com/rgriff23/Olympic_history/refs/heads/master/data/athlete_events.csv" text="The Main Data" %}
-{% include elements/button.html link="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVt11gAvsQUN2916AT20BvCWGBz9GC2efYL1AFmqx1nxkIi8eo9onbPDSqlrvEaZjZ-sg2rluPY5aR/pub?gid=1658076489&single=true&output=csv" text="Contextual Data" %}
+{% include elements/button.html link="https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019/data" text="Contextual Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/pjordan2/pjordan2.github.io/blob/main/python_notebooks/Workbook.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/pjordan2/pjordan2.github.io/blob/main/python_notebooks/final_project.ipynb" text="The Analysis" %}
 </div>
