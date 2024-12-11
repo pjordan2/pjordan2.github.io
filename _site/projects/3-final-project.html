@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Fall 2024
+  FALL2024ID11783
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IS445 Final Project">
+  <meta property="og:description" content="Interactive Data Visualization Article for my final project in IS445.">
+  <meta property="og:image" content="assets/pngs/country_medal_count.png">
+
+  <title>IS445 Final Project</title>
+  <meta name="description" content="Interactive Data Visualization Article for my final project in IS445.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Henderson Resume</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="a-century-of-olympic-achievements">A Century of Olympic Achievements</h1>
+
+<p>By: Porscha Henderson</p>
+
+<h3 id="understanding-the-data">Understanding the Data</h3>
+
+<p>The dataset we’re exploring contains various information about Olympic athletes and their results starting in the 1896 Athens games to the 2016 Rio Olympics. It includes details such as the athletes’ names, genders, ages, heights, weights, what country they participated for, and the medals they won.</p>
+
+<p>An interesting trend we can observe from this dataset is the specialization of athletes over time. In the early Olympics, it wasn’t uncommon for athletes to compete in multiple, often unrelated events. Today, Olympians will focus on a single discipline, perfecting their performance in a specific event through specialized training and techniques.</p>
+
+<p>Another fascinating aspect of the data is the impact of geopolitical changes on Olympic participation. The dissolution of the Soviet Union, for example, led to the emergence of many new national teams in the 1990s. Similarly, the reunification of Germany affected that country’s Olympic representation.</p>
+
+<h3 id="olympic-achievements-by-country">Olympic Achievements by Country</h3>
+
+<p>The Olympic Games have captivated the world for over a century, showcasing the top abilities of human athletic achievement. Starting with just 14 countries in the 1896 games to the over 200 countries that compete today, the Olympics have always been a time to bring together people from different kinds of diverse backgrounds to celebrate each other’s culture and achievements.</p>
+
+<vegachart schema-url="/assets/json/altair_medal_count_final.json" style="width: 100%"></vegachart>
+
+<p>From this plot we can see several interesting patterns and fluctuations in Olympic performance over time. Most notably, there are significant spikes and variations in medal counts, with some countries showing dramatic peaks at certain points. For example, there’s a remarkable peak for the Soviet Union (URS) around 1980 that stands out prominently. The graph also demonstrates how different nations’ performances have evolved, with some showing consistent strength while others display more variable results. The more recent years (from 1990 onwards) show a more competitive landscape with multiple countries achieving similar medal counts, indicated by the closer clustering of lines. The vertical axis measures the total medal count, ranging from 0 to 500, while the horizontal axis spans over a century of Olympic competitions, making this a comprehensive visualization of Olympic success across major sporting nations. It’s also important to note that when counting these medals, every single athlete counts as a medal. So for teams sports like basketball, all 12 players on the roster will count as 12 medals.</p>
+
+<h3 id="top-10-sports-earnings">Top 10 Sports Earnings</h3>
+
+<vegachart schema-url="/assets/json/altair_sports_earnings.json" style="width: 100%"></vegachart>
+
+<p>The chart above shows the top 10 sports ranked by total athlete earnings in millions of dollars according to Forbes from 1990-2020. Basketball leads the chart with approximately $3,418.1 million in total earnings, followed by boxing at $2,298.8 million and soccer at $2,223.5 million.</p>
+
+<p>This earnings distribution shows an interesting contrast to Olympic medal counts. While basketball, boxing, and soccer dominate athlete earnings, these sports typically don’t lead Olympic medal counts. Swimming and athletics (track and field), which aren’t even present in the top 10 earnings list, typically have the highest medal counts at the Olympics. For example, the United States’ Olympic success is largely built on swimming and athletics, while their highest-earning sport (basketball) only provides one medal opportunity per gender. Similarly, while tennis and golf show significant earnings, they are relatively new to the Olympics and offer limited medal opportunities. This disparity highlights how commercial success in sports doesn’t necessarily correlate with Olympic achievement, as Olympic sports often prioritize amateur status and competitive diversity over commercial potential.</p>
+
+<h3 id="earnings-by-country">Earnings by Country</h3>
+
+<vegachart schema-url="/assets/json/altair_nationality_earnings.json" style="width: 100%"></vegachart>
+
+<p>The horizontal bar chart above displays the top 10 nationalities ranked by total athlete earnings in millions of dollars. The United States dominates with approximately $8,786.3 million in total earnings, followed by Portugal and Switzerland with $767.1 and $761.1 million respectively. Other top-earning nations include Argentina ($718.5M), Germany ($639M), UK ($443.2M), Brazil ($422M), Philippines ($242M), Finland ($129M), and Italy ($128M).</p>
+
+<p>This earnings distribution shows an interesting parallel to Olympic medal counts, though with notable differences. While the United States’ leading position in athlete earnings aligns with their historical Olympic dominance, many traditional Olympic powerhouses are not seen in this top earnings list. For instance, China and Russia, consistently among the top Olympic medal winners with the United States, don’t appear in the highest-earning nations. Conversely, countries like Portugal and Switzerland show high athlete earnings despite typically modest Olympic medal counts. This suggests that financial success in sports doesn’t necessarily correlate with Olympic achievement, as Olympic success often depends more on state-sponsored athletic programs and development of sports that may not be the most lucrative commercially. The presence of smaller nations like the Philippines and Finland in the top earnings list, primarily due to individual athlete success in professional sports, contrasts with their relatively limited Olympic medal tallies.</p>
+
+<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/rgriff23/Olympic_history/refs/heads/master/data/athlete_events.csv">
+  The Main Data
+</a>
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVt11gAvsQUN2916AT20BvCWGBz9GC2efYL1AFmqx1nxkIi8eo9onbPDSqlrvEaZjZ-sg2rluPY5aR/pub?gid=1658076489&amp;single=true&amp;output=csv">
+  Contextual Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/pjordan2/pjordan2.github.io/blob/main/python_notebooks/Workbook.ipynb">
+  The Analysis
+</a>
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Porscha Henderson</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:porscha.h292@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/pjordan2"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/porschahend"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
