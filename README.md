@@ -5,7 +5,6 @@
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/pjordan2/pjordan2.github.io/commits/master)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://pjordan2.github.io/)
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/porschahend/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 <p align="center"> 
   <kbd>
@@ -39,14 +38,6 @@ Explore the following sections on my site:
 ⚡️ **Git & GitHub** for version control and hosting.\
 ⚡️ **GitHub Pages** for free static site hosting.\
 ⚡️ **Markdown** for documentation (like this README!).
-
----
-
-## 📜 License
-
-**MIT License**
-
-> This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
 ---
 
