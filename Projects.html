@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porscha Henderson - Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Porscha Henderson</div>
+            <ul class="nav-links">
+                <li><a href="Index.html" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('projects')" class="active">Projects</a></li>
+                <li><a href="About.html" onclick="showSection('about')">About Me</a></li>
+                <li><a href="Contact.html" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="projects" class="section active">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                        <div class="project-card-header">
+                            <h3>Data Analysis Project</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-description">
+                                A comprehensive data analysis project exploring trends in sports performance metrics using Python and statistical modeling.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                            <a href="https://github.com/pjordan2/project1" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h3>Web Development Project</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-description">
+                                A responsive web application built with modern web technologies, featuring interactive data visualizations.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <a href="https://github.com/pjordan2/project2" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h3>Machine Learning Project</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p class="project-description">
+                                Predictive modeling project using machine learning algorithms to analyze healthcare data and identify patterns.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-Learn</span>
+                                <span class="tech-tag">R</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <a href="https://github.com/pjordan2/project3" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

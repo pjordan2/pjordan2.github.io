@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porscha Henderson - Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Porscha Henderson</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
+                <li><a href="Projects.html" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="About.html" onclick="showSection('about')">About Me</a></li>
+                <li><a href="Contact.html" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="profile-img">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEivNnsff2uxw/profile-displayphoto-shrink_400_400/B56Zd0ZzG5HUAg-/0/1750004609972?e=1756944000&v=beta&t=ofhGQmkcr-Lv9LYFyMou7wfXZFyPhzXTg24MjAwwqRk" 
+                    alt="Porscha Henderson smiling warmly while facing the camera in a bright indoor setting with a neutral background, expressing a friendly and approachable mood" />
+                </div>
+                <h1>Porscha Henderson</h1>
+                <p>Aspiring Data Analyst passionate about bringing insights to sports and healthcare. Currently studying Information Sciences at the University of Illinois Urbana-Champaign.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/porschahend/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/pjordan2" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/ProjectPorscha" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:porscha.h292@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1mcowsioGgIWlmALbmLEALKElLLSJxeIR" onclick="downloadResume()" title="Download Resume">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2>Professional Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <h3>Web Development Volunteer</h3>
+                        <div class="company">Delta Phi Omega Sorority, Inc.</div>
+                        <div class="date">April 2025 - Present</div>
+                        <div class="description">
+                            Maintained a responsive website for the organization, ensuring optimal performance and user experience. Developed constant updates to the site, ensuring up-to-date 
+                            information and resources for current members and interested undergraduates.
+                        </div>
+                        <ul>
+                            <li>Managed and maintained the national website using WordPress, ensuring up-to-date content and optimal functionality through HTML and CSS</li>
+                            <li>Collaborated with charters to support and enhance their individual websites, providing technical guidance and resources</li>
+                            <li>Curated and digitally archived 26 years of comprehensive records of organizational history, preserving key milestones and achievements</li>
+                            <li>Facilitated regular, timely communication and project coordination with the Director of Marketing and Chief Marketing Officer to align digital strategy with 
+                                organizational guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h2>Technical Skills</h2>
+                
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-r-project"></i>
+                            <span>R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

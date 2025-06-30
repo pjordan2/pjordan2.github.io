@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porscha Henderson - Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Porscha Henderson</div>
+            <ul class="nav-links">
+                <li><a href="Index.html" onclick="showSection('home')">Home</a></li>
+                <li><a href="Projects.html" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('about')" class="active">About Me</a></li>
+                <li><a href="Contact.html" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="about" class="section active">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="about-text">
+                        <p>
+                            Hi! I'm an undergraduate student at University of Illinois Urbana-Champaign, studying Information Sciences with minors in Data Science and Recreation, Sport, and Tourism. 
+                            I'm passionate about leveraging data to uncover meaningful insights that can make a real impact in the sports and healthcare industries.
+                        </p>
+                        <p>
+                            My journey into data analysis began with my love for sports and curiosity about the stories that numbers can tell. I'm fascinated by how data can reveal patterns, 
+                            predict outcomes, and drive decision-making in ways that can improve both athletic performance and healthcare outcomes.
+                        </p>
+                        <p>
+                            When I'm not diving into datasets or coding, you can find me exploring the latest trends in sports analytics, staying active, or working on personal projects that 
+                            combine my technical skills with my interests in recreation and tourism.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <p>Information Sciences major with minors in Data Science and Recreation, Sport, and Tourism at UIUC</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Focus Areas</h3>
+                            <p>Sports Analytics and Healthcare Data Analysis</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-target"></i>
+                            <h3>Career Goal</h3>
+                            <p>Aspiring Data Analyst dedicated to driving insights in sports and healthcare</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
