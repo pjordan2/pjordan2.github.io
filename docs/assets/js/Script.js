@@ -53,18 +53,18 @@ function handleFormSubmit(event) {
         },
         body: JSON.stringify({ name, email, subject, message })
     })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Message sent successfully!');
-        } else {
-            alert('There was an error sending your message.');
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
+        return response.json();
+    })
+    .then(data => {
+        alert("Thanks for reaching out. I'll get back to you as soon as possible!");
     })
     .catch(error => {
-        console.error('Error:', error);
-        alert('There was an error sending your message.');
-    });
+        alert(`Error: ${error.message}`);
+    })
 
     // Reset form
     event.target.reset();
