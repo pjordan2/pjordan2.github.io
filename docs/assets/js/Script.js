@@ -73,7 +73,6 @@ function handleFormSubmit(event) {
 // Resume download
 function downloadResume() {
     const resumeFilePath = 'https://drive.google.com/file/d/1yw2LJcDky9Kfo_nVKvuJX_mbpE12vvRr/view?usp=sharing';
-    window.open(resumeFilePath, '_blank');
 }
 
 // Smooth scrolling and navbar background change on scroll
