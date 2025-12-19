@@ -8,7 +8,7 @@
 
 <p align="center"> 
   <kbd>
-    <a href="https://pjordan2.github.io/" target="_blank"><img src="images/preview.png">
+    <a href="https://pjordan2.github.io/" target="_blank"><img src="docs/images/preview.png">
   </a>
   </kbd>
 </p>
